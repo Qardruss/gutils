@@ -13,5 +13,6 @@ Releases in the 'bin' folder
 
 You need Go 1.15.2 and Python 3.9.7 to compile this
 You also need to install the Python package 'pyinstaller' to compile this
+You also need upx installed ('sudo dnf install -y upx' for Fedora/Red Hat, 'sudo apt install -y upx' for Ubuntu/Ubuntu-based distros)
 
 Just run `make full-package` and it should do some magic and look in the 'bin' folder to get the executables
