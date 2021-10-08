@@ -14,7 +14,7 @@ build:
 
 clean:
 	sleep 0.5
-	rm -rf test fstest sha1 b64enc encrypt build dist gutils.7z decrypt.spec decrypt compress
+	rm -rf test fstest sha1 b64enc encrypt build dist gutils.zip decrypt.spec decrypt compress
 	sleep 0.5
 
 cleanbin:
@@ -36,5 +36,5 @@ move: b64enc sha1 test encrypt
 	mv dist/decrypt bin
 	rm -rf dist
 package:
-	bash -c "cd bin && 7z a gutils.7z && mv gutils.7z .. && cd .. "
+	bash -c "cd bin && zip gutils.zip * && mv gutils.zip .. && cd .. "
 full-package: cleanbin clean build pack move clean package cleanbin
