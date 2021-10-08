@@ -12,5 +12,5 @@ func main() {
 	encoder.Write(input)
 	encoder.Close()
 	fmt.Print("\n")
-	fmt.Println(":: ENCODED WITH B64GO ::")
+	fmt.Println(":: gutils b64go ::")
 }
