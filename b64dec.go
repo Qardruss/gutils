@@ -7,7 +7,13 @@ import (
 )
 
 func main() {
-	decoder := base64.NewDecoder(base64.StdEncoding, os.Stdout)
-	decoder.Read([]byte(os.Args[1]))
+
+	sDec, err := base64.StdEncoding.DecodeString(os.Args[1])
+	if err != nil {
+		fmt.Printf("Error decoding string: %s ", err.Error())
+		return
+	}
+
+	fmt.Println(string(sDec))
 	fmt.Println(":: gutils b64go ::")
 }

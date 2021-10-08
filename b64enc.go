@@ -7,10 +7,7 @@ import (
 )
 
 func main() {
-	input := []byte(os.Args[1])
-	encoder := base64.NewEncoder(base64.StdEncoding, os.Stdout)
-	encoder.Write(input)
-	encoder.Close()
-	fmt.Print("\n")
+	encoded := base64.StdEncoding.EncodeToString([]byte(os.Args[1]))
+	fmt.Println(string(encoded))
 	fmt.Println(":: gutils b64go ::")
 }
