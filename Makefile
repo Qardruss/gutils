@@ -4,6 +4,10 @@ deploy: clean build pack
 clean-deploy: unpack clean build pack
 cdep: unpack build pack
 
+setup:
+	pip install pyinstaller
+	
+
 build:
 	go build test.go
 	go build b64enc.go
