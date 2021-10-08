@@ -1,2 +1,13 @@
 __pycache__
 decrypt.go
+build
+dist
+gutils.zip
+decrypt.spec
+test.go
+*.strings
+*.upx.strings
+*.spec
+bytes
+build/*
+y.txt
