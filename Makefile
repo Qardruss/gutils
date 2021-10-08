@@ -10,7 +10,7 @@ build:
 	go build test.go
 	go build sha1.go
 	go build encrypt.go
-	pyinstaller --noconfirm --onefile --console  "/home/Arkadii/a-gostuff/decrypt.py"
+	pyinstaller --noconfirm --onefile --console  "decrypt.py"
 
 clean:
 	sleep 0.5
