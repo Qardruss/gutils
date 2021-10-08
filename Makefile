@@ -22,11 +22,11 @@ cleanbin:
 	rm -rf bin/*
 	sleep 0.5
 
-pack: b64enc sha1 test encrypt encrypt decrypt
-	upx -9 b64enc sha1 test encrypt decrypt
+pack: b64enc sha1 test encrypt encrypt
+	upx -9 b64enc sha1 test encrypt
 
-unpack: b64enc sha1 test encrypt decrypt
-	upx -d b64enc sha1 test encrypt decrypt
+unpack: b64enc sha1 test encrypt
+	upx -d b64enc sha1 test encrypt
 
 move: b64enc sha1 test encrypt
 	mv b64enc bin
