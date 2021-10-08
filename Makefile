@@ -47,3 +47,8 @@ full-clean: clean cleanbin clean-strings
 clean-strings:
 	rm -rf *.strings *.upx.strings
 full-package: cleanbin clean build pack move clean package cleanbin
+pull:
+	git fetch
+	git pull
+push:
+	bash -c "git add * && git commit -m \"Commit from Makefile\" && git push"

@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	sDec, err := base64.StdEncoding.DecodeString(os.Args[1])
 	if err != nil {
 		fmt.Printf("Error decoding string: %s ", err.Error())
