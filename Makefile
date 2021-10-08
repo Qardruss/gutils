@@ -18,7 +18,7 @@ build:
 
 clean:
 	sleep 0.5
-	rm -rf test fstest sha1 b64enc encrypt build dist gutils.zip *.spec decrypt compress bytes
+	rm -rf test fstest sha1 b64enc encrypt build dist gutils.zip *.spec decrypt compress bytes build/
 	sleep 0.5
 
 cleanbin:
