@@ -8,6 +8,8 @@ Gutils is a project with certain useless programs and some useful ones
 Gutils might be a future GNU replacement
 
 Releases in the 'bin' folder
+the bin folder got accidentially deleted and we can't find a way to bring it back
+We will throw the releases into Github Releases
 
 # Manual Compilation
 
