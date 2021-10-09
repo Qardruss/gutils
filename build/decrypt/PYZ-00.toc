@@ -661,9 +661,9 @@
   ('stringprep',
    '/home/gitpod/.pyenv/versions/3.8.12/lib/python3.8/stringprep.py',
    'PYMODULE'),
-  ('tracemalloc',
-   '/home/gitpod/.pyenv/versions/3.8.12/lib/python3.8/tracemalloc.py',
-   'PYMODULE'),
   ('_py_abc',
    '/home/gitpod/.pyenv/versions/3.8.12/lib/python3.8/_py_abc.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   '/home/gitpod/.pyenv/versions/3.8.12/lib/python3.8/tracemalloc.py',
    'PYMODULE')])

@@ -15,6 +15,7 @@ build:
 	go build sha1.go
 	go build encrypt.go
 	go build b64dec.go
+	go build rand.go
 	pyinstaller --noconfirm --onefile --console  "decrypt.py"
 
 clean:
@@ -27,19 +28,20 @@ cleanbin:
 	rm -rf bin/*
 	sleep 0.5
 
-pack: b64enc sha1 test encrypt encrypt b64dec
-	upx -9 b64enc sha1 test encrypt b64dec
+pack: b64enc sha1 test encrypt encrypt b64dec rand
+	upx -9 b64enc sha1 test encrypt b64dec rand
 
-unpack: b64enc sha1 test encrypt
-	upx -d b64enc sha1 test encrypt
+unpack: b64enc sha1 test encrypt rand
+	upx -d b64enc sha1 test encrypt rand
 
-move: b64enc sha1 test encrypt b64dec
+move: b64enc sha1 test encrypt b64dec rand
 	mv b64enc bin
 	mv sha1 bin
 	mv test bin
 	mv encrypt bin
 	mv dist/decrypt bin
 	mv b64dec bin
+	mv rand bin
 	rm -rf dist
 package:
 	bash -c "cd bin && zip gutils.zip * && mv gutils.zip .. && cd .. "
