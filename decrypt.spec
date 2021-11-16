@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['decrypt.py'],
-             pathex=['/workspace/gutils'],
+             pathex=[],
              binaries=[],
              datas=[],
              hiddenimports=[],

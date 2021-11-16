@@ -14,5 +14,4 @@ func main() {
 	}
 
 	fmt.Println(string(sDec))
-	fmt.Println(":: gutils b64go ::")
 }
