@@ -13,7 +13,7 @@ Releases in Github Releases are outdated and possibly won't work
 
 # Manual Compilation
 
-You need Go 1.15.2 and Python 3.9.7 to compile this
+You need Go 1.15.2+ and Python 3.9.7+ to compile this
 You also need to install the Python package 'pyinstaller' to compile this
 You also need upx installed ('sudo dnf install -y upx' for Fedora/Red Hat, 'sudo apt install -y upx' for Ubuntu/Ubuntu-based distros)
 
